@@ -73,11 +73,6 @@ try {
     }
 
 
-
-    timeout(time:1, unit:'HOURS') {
-    input message:'Approve deployment?', submitter: 'it-ops'
-}
-
       stage('Deploy App') {
         node {
         withCredentials([[
@@ -88,12 +83,6 @@ try {
         ]]) { 
           ansiColor('xterm') {
           sh 'kubectl apply -f deploy.yaml'
-
-
-            timeout(time:1, unit:'HOURS') {
-            input message:'Approve deployment?', submitter: 'it-ops'
-        }
-          sh 'kubectl delete -f deploy.yaml'
            }
         }
         }
