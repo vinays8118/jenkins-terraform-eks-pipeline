@@ -6,7 +6,7 @@ Details regarding EKS cluster is found in the below link:
 
 https://github.com/vinays8118/learn-terraform-provision-eks-cluster/find/master
 
-# Deploy Kubernetes poo and service 
+-  Deploy Kubernetes poo and service 
 
 
-# Both EKS cluster and deploymnet is achived throught jenkins pipline.
+-  Both EKS cluster and deploymnet is achived throught jenkins pipline.
